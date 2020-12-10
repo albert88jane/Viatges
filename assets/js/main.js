@@ -1,17 +1,11 @@
-/**
-* Template Name: Dewi - v2.2.0
-* Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 !(function($) {
   "use strict";
 
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
-        $(this).remove();
+      $('#preloader').delay(1000).fadeOut('slow', function() {
+        //$(this).remove();
       });
     }
   });
