@@ -69,11 +69,71 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#about" class="get-started-btn scrollto">Iniciar Sesion</a>
+      <a type="button" data-toggle="modal" data-target="#exampleModal" class="get-started-btn scrollto">Iniciar Sesion / Registrar</a>
 
     </div>
   </header><!-- End Header -->
-
+  <!-- ======= Sing In ======= -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="probes/crea_usuari.php">
+            <label for="nom">
+              Nombre
+              <input type="text" name="nom" id="nom">
+            </label>
+            <label for="email">
+              Correo Electronico
+              <input type="email" name="email" id="email">
+            </label>
+            <label for="contrasenya">
+              Contraseña
+              <input type="password" name="contrasenya" id="contrasenya">
+            </label>
+            <br>
+            <input type="submit" value="Enviar el formulario">
+          
+          </form>
+          <p>Crea una cuenta aqui: <a type="button" data-toggle="modal" data-target="#exampleModa2" class="btn btn-link">Registrarse</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <a type="button" class="btn btn-success">Save changes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Sing In-->
+  <!-- Sing up -->
+    <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="../form-result.php">
+  
+              <input type="submit" value="Enviar el formulario">
+            
+            </form>
+            <p>Crea una cuenta aqui: <a href="#SingIn">Registrarse</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            <a type="button" class="btn btn-success">Save changes</a>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="fade-up" data-aos-delay="1500">
