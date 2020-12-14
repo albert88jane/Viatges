@@ -31,7 +31,7 @@ abstract class viatges{
     
 //                abstract protected function select();
                 abstract protected function insert_usuari();
-				abstract protected function select_usuari();
+				abstract protected function select_usuari($usuariNom);
 //                abstract protected function update();
 //                abstract protected function delete();
 	
