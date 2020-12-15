@@ -232,7 +232,7 @@
 
   $(document).ready(function() {
     var busqueda = $('#busqueda'),
-        titulo = $('h5');
+        titulo = $('div h5');
     $(titulo).each(function() {
         var li = $(this);
         //si presionamos la tecla
@@ -242,18 +242,18 @@
             //
             var clase = $('.search i');
             if ($(busqueda).val() != '') {
-                $(clase).attr('class', 'fa fa-times');
+                $(clase).attr('class', 'glyphicon glyphicon-remove');
             } else {
-                $(clase).attr('class', 'fa fa-search');
+                $(clase).attr('class', 'glyphicon glyphicon-search');
             }
-            if ($(clase).hasClass('fa fa-times')) {
+            if ($(clase).hasClass('glyphicon glyphicon-remove')) {
                 $(clase).click(function() {
                     //borramos el contenido del input
                     $(busqueda).val('');
                     //mostramos todas las listas
                     $(li).parent().show();
                     //volvemos a añadir la clase para mostrar la lupa
-                    $(clase).attr('class', 'fa fa-search');
+                    $(clase).attr('class', 'glyphicon glyphicon-search');
                 });
             }
             //ocultamos toda la lista

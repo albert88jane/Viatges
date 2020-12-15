@@ -1678,3 +1678,21 @@ section {
 #ocultar-y-mostrar{
   display: none;
 }
+
+.search {
+	max-width: 500px;
+	margin: 30px auto;
+	position: relative;
+}
+.search input {
+	width: 500px;
+    padding: 10px;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+}
+.search i {
+	position: absolute;
+    cursor: pointer;
+    right: -12px;
+    top: 9px;
+}
