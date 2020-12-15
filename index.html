@@ -84,25 +84,21 @@
         </div>
         <div class="modal-body">
           <div id="mostrar-y-ocultar">
-            <form action="probes/crea_usuari.php" method="POST">
+            <form action="probes/login_usuario.php" method="POST">
               <label for="nom">
                 Nombre
                 <input type="text" name="nom" id="nom">
-              </label>
-              <label for="email">
-                Correo Electronico
-                <input type="email" name="email" id="email">
               </label>
               <label for="contrasenya">
                 Contraseña
                 <input type="password" name="contrasenya" id="contrasenya">
               </label>
               <br>
-              <input type="submit" value="Enviar el formulario">
+              <input class="boton" type="submit" value="Enviar el formulario">
             
             </form>
           </div>
-           <div id="ocultar-y-mostrar">
+          <div id="ocultar-y-mostrar">
             <form action="probes/crea_usuari.php" method="POST">
                 <label for="nom">
                   Nombre
@@ -117,19 +113,18 @@
                   <input type="password" name="contrasenya" id="contrasenya">
                 </label>
                 <br>
-                <input type="submit" value="Enviar el formulario">
+                <input class="boton" type="submit" value="Enviar el formulario">
               
               </form>
           </div>
 
-          <p>Crea una cuenta aqui: <button id="ocultar-mostrar" class="btn btn-link">Registrarse</button></p>
 
          
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          <a type="button" class="btn btn-success">Save changes</a>
+          <button class="boton" id="ocultar-mostrar" class="btn btn-link">Registrarse</button>
+          <button type="button" class="boton" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
