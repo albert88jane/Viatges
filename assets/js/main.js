@@ -204,18 +204,32 @@
 })(jQuery);
 
   //SingIn
-  var ocultar = document.getElementById("ocultar-mostrar")
-  var x = document.getElementById("ocultar-y-mostrar")
-  var y = document.getElementById("mostrar-y-ocultar")
+  var ocultar = document.getElementById("ocultar-mostrar");
+  var x = document.getElementById("ocultar-y-mostrar");
+  var y = document.getElementById("mostrar-y-ocultar");
+  var titol = document.getElementById("exampleModalLabel");
   ocultar.addEventListener("click",function(){ 
     if (x.style.display === "none") {
       x.style.display = "block";
+	  titol.innerHTML = "Registro";
     } else {
       x.style.display = "none";
     }
-    if (y.style.display === "none") {
-      y.style.display = "block";
+    	if (y.style.display === "block") {
+			y.style.display = "none";
+			
     } else {
-      y.style.display = "none";
-    }
+      y.style.display = "block";
+	  titol.innerHTML = "Iniciar Sesion";
+	}
+	
   });
+
+//	var mostrar = document.getElementById("ocultar-mostrar");
+//	mostrar.addEventListener('click',function(){
+//		if (y.style.display === "block") {
+//      y.style.display = "none";
+//    } else {
+//      y.style.display = "block";
+//    }
+//	});
