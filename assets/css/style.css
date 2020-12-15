@@ -238,6 +238,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Get Startet Button */
+.boton{
+  margin-left: 25px;
+  color:  #000000;
+  border-radius: 4px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 0px ;
+  animation-name: vibrar;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+}
+ 
+@keyframes vibrar {
+  0% {background-color: #FFCCCC }
+  10% {background-color:#CCAFFF}
+  20% {background-color: #A6BEFF}
+  30% {background-color:#99FFFF}
+  40% {background-color:#D5CCBB}
+  50% {background-color: #99FF99}
+  60% {background-color: #FFFF99}
+  70% {background-color: #FFCC99}
+  80% {background-color: #CCCCCC}
+  90% {background-color: #CCAFFF}
+  100% {background-color:#FFCCCC}
+}
+
 .get-started-btn {
   margin-left: 25px;
   color: #fff;
@@ -1641,4 +1670,11 @@ section {
 
 #footer .credits a {
   transition: 0.3s;
+}
+
+#mostrar-y-ocultar{
+  display: block;
+}
+#ocultar-y-mostrar{
+  display: none;
 }

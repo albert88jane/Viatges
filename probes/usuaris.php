@@ -53,13 +53,22 @@
             
         }
 		
-	public function select_usuari($usuariNom = "");	
-        	
-			
+	public function select_usuari($usuariNom){
+        		
+         
+      $this->query = "SELECT contrasenya
+                    FROM usuari
+                    WHERE nom_usuari='$usuariNom'";
+      $this->rebre_resultats_query();
+    
+    // Any register selected
+    if (count($this->rows)==1) {
+      foreach ($this->rows[0] as $property => $value)
+        $this->$property = $value;
+      }
         
         
-        
-        
+	}
         
     }
 

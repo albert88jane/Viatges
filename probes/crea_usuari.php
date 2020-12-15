@@ -31,6 +31,6 @@
 			
         	$usuari2 -> insert_usuari($usuari1);
         
-        	echo "VIVA EL BETIS, TE COMO EL CULO";
+        	
 
 ?>

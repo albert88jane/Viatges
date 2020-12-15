@@ -202,3 +202,28 @@
   });
 
 })(jQuery);
+
+  //SingIn
+  var boton = document.getElementById("ocultar-mostrar");
+  var x = document.getElementById("ocultar-y-mostrar");
+  var y = document.getElementById("mostrar-y-ocultar");
+  var titol = document.getElementById("exampleModalLabel");
+
+  boton.addEventListener("click",function(){ 
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    titol.innerHTML = "Registrarse";
+    boton.innerHTML = "Iniciar Sesion"
+    } else {
+      x.style.display = "none";
+    }
+    	if (y.style.display === "block") {
+			y.style.display = "none";
+			
+    } else {
+      y.style.display = "block";
+    titol.innerHTML = "Iniciar Sesion";
+    boton.innerHTML = "Registrarse"
+	}
+	
+  });
