@@ -1642,3 +1642,10 @@ section {
 #footer .credits a {
   transition: 0.3s;
 }
+
+#mostrar-y-ocultar{
+  display: block;
+}
+#ocultar-y-mostrar{
+  display: none;
+}

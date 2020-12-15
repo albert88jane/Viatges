@@ -10,17 +10,6 @@
     }
   });
 
-  //SingIn
-  var ocultar = document.getElementById("ocultar-mostrar")
-  var x = document.getElementById("ocultar-y-mostrar")
-  ocultar.addEventListener("click",function(){ 
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  });
-
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 16;
   if (window.matchMedia("(max-width: 991px)").matches) {
@@ -213,3 +202,20 @@
   });
 
 })(jQuery);
+
+  //SingIn
+  var ocultar = document.getElementById("ocultar-mostrar")
+  var x = document.getElementById("ocultar-y-mostrar")
+  var y = document.getElementById("mostrar-y-ocultar")
+  ocultar.addEventListener("click",function(){ 
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    if (y.style.display === "none") {
+      y.style.display = "block";
+    } else {
+      y.style.display = "none";
+    }
+  });
