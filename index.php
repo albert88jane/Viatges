@@ -155,31 +155,31 @@ if(isset($_REQUEST['politica-cookies'])) {
                 <div class="count-box">
                   <i class="icofont-simple-smile"></i>
                   <span data-toggle="counter-up">65</span>
-                  <p>Happy Clients</p>
+                  <p>Usuarios</p>
                 </div>
               </div>
 
               <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
                 <div class="count-box">
                   <i class="icofont-document-folder"></i>
-                  <span data-toggle="counter-up">85</span>
-                  <p>Projects</p>
+                  <span data-toggle="counter-up">4</span>
+                  <p>Experiencias</p>
                 </div>
               </div>
 
               <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
                 <div class="count-box">
                   <i class="icofont-clock-time"></i>
-                  <span data-toggle="counter-up">12</span>
-                  <p>Years of experience</p>
+                  <span data-toggle="counter-up">2</span>
+                  <p>Años en el sector</p>
                 </div>
               </div>
 
               <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
                 <div class="count-box">
                   <i class="icofont-award"></i>
-                  <span data-toggle="counter-up">15</span>
-                  <p>Awards</p>
+                  <span data-toggle="counter-up">1</span>
+                  <p>Premios</p>
                 </div>
               </div>
 
@@ -188,28 +188,29 @@ if(isset($_REQUEST['politica-cookies'])) {
         </div>
 
         <div class="row">
-
+        
           <div class="col-lg-6 video-box align-self-baseline" data-aos="zoom-in" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+            <img src="assets/img/paisaje.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/embed/P7d1H83IcjE?controls=0" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
           <div class="col-lg-6 pt-3 pt-lg-0 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>Información sobre FastRumbo.</h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              En esta pagina podrás encontrar múltiples experiencias de nuestra comunidad de usuarios.           
             </p>
             <ul>
-              <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bx bx-check-double"></i> Voluptate repellendus pariatur reprehenderit corporis sint.</li>
-              <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i class="bx bx-check-double"></i> Podrás ayudar a otros usuarios a conocer lugares.</li>
+              <li><i class="bx bx-check-double"></i> Podrás compartir tus experiencias desde cualquier lugar.</li>
+              <li><i class="bx bx-check-double"></i> Podrás opinar sobre las experiencias de la comunidad.</li>
             </ul>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+            Para unirte a nuestra comunidad solo tendrás que crear una cuenta, y a partir de ahí ya podrás disfrutar de contar tus experiencias a la comunidad
+              sobre los sitios tan increíbles que has visitado.
+              <br>
+              Contra mayor sea la comunidad de usuarios mas sitios podremos descubrir.
+              <br><br>
+              <strong>ÚNETE SERÁ DIVERTIDO !!</strong>
             </p>
           </div>
 
