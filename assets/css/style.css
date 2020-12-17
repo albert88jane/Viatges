@@ -1678,3 +1678,39 @@ section {
 #ocultar-y-mostrar{
   display: none;
 }
+
+.search {
+	max-width: 500px;
+	margin: 30px auto;
+	position: relative;
+}
+.search input {
+	width: 500px;
+  padding: 10px;
+  border: 1px solid #cecece;
+  border-radius: 3px;
+}
+.search i {
+	position: absolute;
+  cursor: pointer;
+  right: -12px;
+  top: 9px;
+}
+.cookies{
+  background-color: #fff;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 1.5em;
+  overflow: hidden;
+  padding: 1em 0.3em;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 150px;
+  text-align: center;
+  z-index: 9999;
+}
+html , body{
+  height: 100%;
+}
