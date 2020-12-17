@@ -5,7 +5,7 @@ window.onload = function() {
     .then(function(info) {
         console.log(info);
   
-        document.getElementsByClassName("card-img-top")[0].innerHTML = info.data[0].img;
+        document.getElementsByClassName("card-icon")[0].innerHTML = info.data[0].img;
   
         document.getElementsByClassName("class-title")[0].innerHTML = info.data[0].titol;
   
