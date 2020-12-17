@@ -1,22 +1,14 @@
 {
-    "results": [
+    "data": [
       {
-        "xp1": {
-          "img": "img",
-          "titol": "Roma",
-          "text": "Benvingut a Roma"
-        },
-        "xp2": {
-            "img": "img",
-            "titol": "París",
-            "text": "Benvingut a París"
-        }
+        "img": "img",
+        "titol": "Roma",
+        "text": "Benvingut a Roma"
+      },
+      {
+        "img": "img",
+        "titol": "París",
+        "text": "Benvingut a París"
       }
-    ],
-    "info": {
-      "seed": "75ee63bec78e6fe6",
-      "results": 1,
-      "page": 1,
-      "version": "1.3"
-    }
+    ]
   }
