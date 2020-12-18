@@ -13,12 +13,13 @@
 
         	$nom_usuari = $_POST['nom'];
             
-			$contrasenya = $_POST['contrasenya'];
+			$contrasenya = md5($_POST['contrasenya']);
             
 			$email = $_POST['email'];
         
 		
 
+        	
 			$usuari1 = array ("nom_usuari" => $nom_usuari, "contrasenya" => $contrasenya ,"email" => $email,
                  "admin" => "0" );
 
@@ -29,8 +30,7 @@
 		
 		
 			
-        	$usuari2 -> insert_usuari($usuari1);
+        	$usuari2 -> insert($usuari1);
         
-        	
 
 ?>
