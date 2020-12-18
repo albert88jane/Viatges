@@ -1,0 +1,14 @@
+{
+    "data": [
+      {
+        "img": "img",
+        "titol": "Roma",
+        "text": "Benvingut a Roma"
+      },
+      {
+        "img": "img",
+        "titol": "París",
+        "text": "Benvingut a París"
+      }
+    ]
+  }
