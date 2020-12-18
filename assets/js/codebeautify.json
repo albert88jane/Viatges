@@ -1,14 +1,28 @@
 {
-    "data": [
+    "results": [
       {
-        "img": "img",
         "titol": "Roma",
-        "text": "Benvingut a Roma"
+        "text": "Benvingut a Roma!"
       },
       {
-        "img": "img",
         "titol": "París",
         "text": "Benvingut a París"
+      },
+      {
+        "titol": "Berlín",
+        "text": "Benvingut a Berlín"
+      },
+      {
+        "titol": "Londres",
+        "text": "Benvingut a Londres"
+      },
+      {
+        "titol": "Lisboa",
+        "text": "Benvingut a Lisboa"
+      },
+      {
+        "titol": "Viena",
+        "text": "Benvingut a Viena"
       }
     ]
   }

@@ -242,8 +242,8 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                                 <i class="ri-brush-4-line"></i>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title"><a href="">Our Mission</a></h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                <h5 class="card-title" id="titol"><a href="">Our Mission</a></h5>
+                                <p class="card-text" id="text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             </div>
                         </div>
                     </div>
