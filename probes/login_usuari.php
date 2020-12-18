@@ -1,20 +1,23 @@
 <?php
 
 
+	error_reporting(-1);
+	ini_set('display_errors','On');
 
 	require_once('usuaris.php');
 
 
-	$nom_usuari = $_POST['nom_usuari'];
+	$nom = $_POST['nom_usuari'];
 
-	$contrasenya = $_POST['contrasenya']:
+	$password = md5($_POST['contrasenya']);
+	
+	$usuarios = new Usuari();
 
-	$usuari = new Usuari();
+	$usuarios -> select($nom, $password);
 
-	$usuari -> select_usuari($nom_usuari);
-
-	echo "hola";
-	echo $usuari;
+	
+	echo $usuarios;
+	
 		
 		
 //		session_start();

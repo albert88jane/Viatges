@@ -30,8 +30,9 @@ abstract class viatges{
 	//creant els metodes abstractes per a les nostres funcions
     
 //                abstract protected function select();
-                abstract protected function insert_usuari();
-				abstract protected function select_usuari($usuariNom);
+                abstract protected function insert();
+				abstract protected function select($username, $password);
+				abstract protected function select_experiencia_categoria($categoria);
 //                abstract protected function update();
 //                abstract protected function delete();
 	
@@ -68,16 +69,13 @@ abstract class viatges{
     
                 protected function rebre_resultats_query(){
                     
-                    $this->conectar_bd();
-                    $resultat = $this->conn->query($this->query);
-                    for($i = 0; $i > $resultat ; $i++){
-                        
-                        $this->rows[$i] = $resultat->fetch_assoc();
-                    }
-                    
-                    $resultat-close();
-                    $this->tencar_bd();
-                }
+                     $this->conectar_bd();
+					$result = $this->conn->query($this->query);
+					for ($i=0;$i<$result->num_rows;$i++)
+					  $this->rows[$i]=$result->fetch_assoc();
+					$result->close();
+					$this->tencar_bd();
+								}
     
     
 }

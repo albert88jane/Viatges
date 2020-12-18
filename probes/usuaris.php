@@ -7,11 +7,12 @@
     class Usuari extends viatges{
         
     //Posant els nostres camps de la taula usuari    
-        
+        private $id;
         private $nom_usuari;
         private $contrasenya;
         private $email;
-        private $admin = 0;
+        private $admin;
+		
         
       
         
@@ -27,9 +28,9 @@
      //pasant el objecte a string per tal de poder ser llegit
         
        	function __toString() {
-		   	echo "entro string <br>";
-		   return "(" . $this->nom_usuari . ", " . $this->contrasenya . ", " .  
-      	$this->email . ", " . $this->admin . ")";
+		   	
+		   return "(" . $this->id . ", " . $this->nom_usuari . ", " .  
+      	$this->contrasenya . ", " . $this->email . "," . $this->admin . ")";
   }
   	
     
@@ -37,39 +38,47 @@
     //Funció per a registrar usuari
         
         
-        
-        public function insert_usuari($usuari = array()){
-            
-//            $this->query = "INSERT INTO usuari (nom_usuari, contrasenya, email, admin) VALUES ('$nom_usuari','$contrasenya','$email','$admin');";
-//            echo "hola";
-            
 			
+        public function insert($usuari = array()){
+            			
 			foreach ($usuari as $property => $value)
           	$$property = $value;
 			$this->query="INSERT INTO usuari (nom_usuari, contrasenya, email, admin)
                       VALUES ('$nom_usuari', '$contrasenya', '$email', '0');";
-        	$this->executa_query($this->query);
-			
+        	$this->executa_query();
             
         }
 		
-	public function select_usuari($usuariNom){
-        		
-         
-      $this->query = "SELECT contrasenya
-                    FROM usuari
-                    WHERE nom_usuari='$usuariNom'";
-      $this->rebre_resultats_query();
-    
-    // Any register selected
-    if (count($this->rows)==1) {
-      foreach ($this->rows[0] as $property => $value)
-        $this->$property = $value;
-      }
-        
-        
-	}
-        
+		
+		//funcio per a fer login
+
+      
+     public function select($username, $password) {
+        $this->query = "SELECT * FROM usuari WHERE nom_usuari='$username' AND contrasenya='$password'";
+        $this->rebre_resultats_query();
+        if (count($this->rows)==1) {
+            foreach ($this->rows[0] as $property => $value)
+            $this->$property = $value;
+            session_start();
+            $_SESSION['userLogged']= $this->rows[0]['id'];
+			
+            return $this->rows;
+        }
+        else{
+            return false;
+        }
     }
+		//funcio per a borrar un usuari
+		
+		public function delete($id_user){
+			  
+			$this -> query = "DELETE FROM usuari WHERE id='$id_user'";
+			$this -> executa_query();
+		}
+		public function select_experiencia_categoria($categoria){}
+
+	}
 
     ?>
+
+        
