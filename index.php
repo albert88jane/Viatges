@@ -315,10 +315,7 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                     </div>
                 </div>
             </div>
-        </section><!-- End About Boxes Section -->
-
-        <!-- ===  ===  = Team Section ===  ===  = -->
-    
+        </section><!-- End About Boxes Section --> 
 
         <!-- ===  ===  = Contact Section ===  ===  = -->
         <section id="contacto" class="contact">
