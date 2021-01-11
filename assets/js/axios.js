@@ -1,6 +1,6 @@
 // Experiences
 window.onload = function() {
-    axios.get('http://http://labs.iam.cat/~a19carerecas/2DAW/Viatges/assets/js/codebeautify.json', {
+    axios.get('http://labs.iam.cat/~a19carerecas/2DAW/Viatges/assets/js/codebeautify.json', {
     })
     .then(function(info) {
         console.log(info);
