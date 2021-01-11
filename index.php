@@ -237,13 +237,15 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                 <div class="row">
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch filter-app" data-aos="fade-up" data-aos-delay="100" title="App 1">
                         <div class="card">
-                            <img src="assets/img/about-boxes-1.jpg" class="card-img-top" alt="...">
+                            <img src="assets/img/about-boxes-1.jpg" id="img" class="card-img-top" alt="...">
                             <div class="card-icon">
                                 <i class="ri-brush-4-line"></i>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title" id="titol"><a href="">Our Mission</a></h5>
                                 <p class="card-text" id="text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                <p id="votsp"></p>
+                                <p id="votsn"></p>
                             </div>
                         </div>
                     </div>

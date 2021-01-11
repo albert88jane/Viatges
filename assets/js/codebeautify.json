@@ -1,8 +1,15 @@
 {
     "results": [
       {
+        "id": 1,
         "titol": "Roma",
-        "text": "Benvingut a Roma!"
+        "descripcio": "Benvingut a Roma!",
+        "img": "https://images4.alphacoders.com/865/865297.jpg ",
+        "data_creacio": "2020-12-25",
+        "vots_positius": 323,
+        "vots_negatius": 547,
+        "id_usuari": 2335,
+        "id_categoria": 1
       },
       {
         "titol": "París",
