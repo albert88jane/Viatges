@@ -40,7 +40,9 @@
         
 			
         public function insert($usuari = array()){
-            			
+            
+
+			
 			foreach ($usuari as $property => $value)
           	$$property = $value;
 			$this->query="INSERT INTO usuari (nom_usuari, contrasenya, email, admin)
@@ -80,5 +82,3 @@
 	}
 
     ?>
-
-        

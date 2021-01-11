@@ -19,7 +19,6 @@
         
 		
 
-        	
 			$usuari1 = array ("nom_usuari" => $nom_usuari, "contrasenya" => $contrasenya ,"email" => $email,
                  "admin" => "0" );
 
@@ -32,5 +31,6 @@
 			
         	$usuari2 -> insert($usuari1);
         
+        	
 
 ?>
