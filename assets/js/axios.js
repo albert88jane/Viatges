@@ -1,6 +1,6 @@
 // Experiences
 window.onload = function() {
-    axios.get('http://localhost/Viatges/assets/js/codebeautify.json', {
+    axios.get('http://localhost/Projectes/projecte_viatges/Viatges/assets/js/codebeautify.json', {
     })
     .then(function(info) {
         console.log(info);
