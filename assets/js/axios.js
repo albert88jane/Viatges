@@ -10,17 +10,12 @@ window.onload = function() {
         //document.getElementsByClassName("card-text")[0].innerHTML = info.data.results[0].text;
 
 
-        document.getElementById("titol").innerHTML = info.data.results[0].titol;
+        // document.getElementById("titol").innerHTML = info.data.results[0].titol;
+        // document.getElementById("text").innerHTML = info.data.results[0].text;
 
-        document.getElementById("text").innerHTML = info.data.results[0].text;
-
-        /*
         document.getElementById("titol").innerHTML = info.data.results[1].titol;
-        document.getElementById("titol").innerHTML = info.data.results[2].titol;
-        document.getElementById("titol").innerHTML = info.data.results[3].titol;
-        document.getElementById("titol").innerHTML = info.data.results[4].titol;
-        document.getElementById("titol").innerHTML = info.data.results[5].titol;
-        */
+        document.getElementById("text").innerHTML = info.data.results[1].text;
+
     })
     .catch(function(){
         console.log("problem!");
