@@ -12,24 +12,81 @@
         "id_categoria": 1
       },
       {
-        "titol": "París",
-        "text": "Benvingut a París"
+        "id": 2,
+        "titol": "Paris",
+        "descripcio": "Benvingut a paris!",
+        "img": "https://images4.alphacoders.com/865/865297.jpg ",
+        "data_creacio": "2020-12-5",
+        "vots_positius": 33,
+        "vots_negatius": 547,
+        "id_usuari": 2335,
+        "id_categoria": 1
       },
       {
-        "titol": "Berlín",
-        "text": "Benvingut a Berlín"
+        "id": 1,
+        "titol": "casa",
+        "descripcio": "Benvingut a Roma!",
+        "img": "https://images4.alphacoders.com/865/865297.jpg ",
+        "data_creacio": "2020-12-25",
+        "vots_positius": 323,
+        "vots_negatius": 547,
+        "id_usuari": 2335,
+        "id_categoria": 1
       },
       {
-        "titol": "Londres",
-        "text": "Benvingut a Londres"
+        "id": 1,
+        "titol": "pedro",
+        "descripcio": "Benvingut a Roma!",
+        "img": "https://images4.alphacoders.com/865/865297.jpg ",
+        "data_creacio": "2020-12-25",
+        "vots_positius": 323,
+        "vots_negatius": 547,
+        "id_usuari": 2335,
+        "id_categoria": 1
       },
       {
-        "titol": "Lisboa",
-        "text": "Benvingut a Lisboa"
+        "id": 1,
+        "titol": "albert",
+        "descripcio": "Benvingut a Roma!",
+        "img": "https://images4.alphacoders.com/865/865297.jpg ",
+        "data_creacio": "2020-12-25",
+        "vots_positius": 323,
+        "vots_negatius": 547,
+        "id_usuari": 2335,
+        "id_categoria": 1
       },
       {
-        "titol": "Viena",
-        "text": "Benvingut a Viena"
+        "id": 1,
+        "titol": "carlos",
+        "descripcio": "Benvingut a Roma!",
+        "img": "https://images4.alphacoders.com/865/865297.jpg ",
+        "data_creacio": "2020-12-25",
+        "vots_positius": 323,
+        "vots_negatius": 547,
+        "id_usuari": 2335,
+        "id_categoria": 1
+      },
+      {
+        "id": 1,
+        "titol": "pedro",
+        "descripcio": "Benvingut a Roma!",
+        "img": "https://images4.alphacoders.com/865/865297.jpg ",
+        "data_creacio": "2020-12-25",
+        "vots_positius": 323,
+        "vots_negatius": 547,
+        "id_usuari": 2335,
+        "id_categoria": 1
+      },
+      {
+        "id": 1,
+        "titol": "albert",
+        "descripcio": "Benvingut a Roma!",
+        "img": "https://images4.alphacoders.com/865/865297.jpg ",
+        "data_creacio": "2020-12-25",
+        "vots_positius": 323,
+        "vots_negatius": 547,
+        "id_usuari": 2335,
+        "id_categoria": 1
       }
     ]
   }

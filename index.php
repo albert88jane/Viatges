@@ -234,7 +234,7 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                     <i class="glyphicon glyphicon-search"></i>
                 </div>
 
-                <div class="row">
+                <div id="experiencies">
                     
                 </div>
             </div>
