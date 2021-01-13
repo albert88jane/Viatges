@@ -1,7 +1,9 @@
 // Experiences
 window.onload = function() {
 
-        axios.get('http://localhost/Viatges/assets/js/codebeautify.json', {
+        //axios.get('http://localhost/Viatges/assets/js/codebeautify.json', {
+        axios.post('http://fastrumbo.alumnes.iam.cat/probes/experiencia_categoria.php', {            
+            categoria: '1'    
     })
     .then(function(info) {
 
@@ -59,7 +61,7 @@ window.onload = function() {
                  cont++;
             }else cont= 0;
         }
-        console.log(contenedor);
+        // console.log(contenedor);
         // for(i=0; i < numJson.length; i++){
 
              document.getElementById("experiencies").innerHTML = buscar + contenedor;

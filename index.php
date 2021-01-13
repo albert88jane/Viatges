@@ -81,11 +81,11 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                     <div id="mostrar-y-ocultar">
                         <form action="probes/login_usuario.php" method="POST">
                             <label for="nom">
-                                Nombre
+                                Nombre:
                                 <input type="text" name="nom" id="nom">
                             </label>
                             <label for="contrasenya">
-                                Contraseña
+                                Contraseña:
                                 <input type="password" name="contrasenya" id="contrasenya">
                             </label>
                             <br>
@@ -96,15 +96,15 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                     <div id="ocultar-y-mostrar">
                         <form action="probes/crea_usuari.php" method="POST">
                             <label for="nom">
-                                Nombre
+                                Nombre:
                                 <input type="text" name="nom" id="nom">
                             </label>
                             <label for="email">
-                                Correo Electronico
+                                Correo Electronico:
                                 <input type="email" name="email" id="email">
                             </label>
                             <label for="contrasenya">
-                                Contraseña
+                                Contraseña:
                                 <input type="password" name="contrasenya" id="contrasenya">
                             </label>
                             <br>
@@ -234,11 +234,52 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                 </div>
 
                 <div class="centrardiv">
-                        <a type="button" class="get-started-btn centrar">
+                        <a type="button" data-toggle="modal" data-target="#popexp" class="get-started-btn centrar">
                             Crear experiencies
                         </a>
                     </div>
+                    
+                    <div class="modal fade" id="popexp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Nova experiencia</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <form action="probes/crea_usuari.php" method="POST">
+                                        <label for="titol">
+                                            Titol:
+                                            <input type="text" name="titol" id="titol">
+                                        </label>
+                                        <label for="descripcio">
+                                            Descripció:
+                                            <textarea rows="4" closedir="50" name="desc">
+                                            </textarea>
+                                        </label>
+                                        <label for="img">
+                                            Imatge(url):
+                                            <input type="url" name="imatge" id="imatge">
+                                        </label>
+                                        <br>
+                                        <input class="boton" type="submit" value="Enviar el formulario">
 
+                                    </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tanca</button>
+                                <button type="button" class="btn btn-primary">Enviar nova experiencia</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    
                 <div id="experiencies">
                     
                 </div>
