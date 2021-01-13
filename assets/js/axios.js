@@ -8,6 +8,12 @@ window.onload = function() {
         var numJson = info.data.results;
         var imatge = info.data.results[0].img;
         console.log(numJson.length);
+        var buscar = "";
+        buscar += "<div class='search'>";
+        buscar += "<input type='text' id='busqueda' placeholder='Buscar ...'>";
+        buscar += "<i class='glyphicon glyphicon-search'></i>";
+        buscar += "</div>";
+
         var contenedor = "";
         var cont = 0;
         for(i=0; i < numJson.length; i++){
@@ -24,6 +30,7 @@ window.onload = function() {
             contenedor += "<div class='card-body'>";
             contenedor += "<h5 class='card-title titol '> " + info.data.results[i].titol + "</h5>";
             contenedor += "<p class='card-text descripcio'> " + info.data.results[i].descripcio + "</p>";
+            contenedor += "<div class='btn-group'>";
             contenedor += "<p class='votsp'>";
             contenedor += "<button type='button' class='btn btn-success'>";
             contenedor += "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-hand-thumbs-up-fill' viewBox='0 0 16 16'>";
@@ -41,6 +48,7 @@ window.onload = function() {
             contenedor += "</div>";
             contenedor += "</div>";
             contenedor += "</div>";
+            contenedor += "</div>";
             
             if(cont ==2){
                 contenedor += "</div>";
@@ -54,7 +62,7 @@ window.onload = function() {
         console.log(contenedor);
         // for(i=0; i < numJson.length; i++){
 
-             document.getElementById("experiencies").innerHTML = contenedor;
+             document.getElementById("experiencies").innerHTML = buscar + contenedor;
 
         //     document.getElementsByClassName("titol")[i].innerHTML = info.data.results[i].titol;
         //     document.getElementsByClassName("descripcio")[i].innerHTML = info.data.results[i].descripcio;

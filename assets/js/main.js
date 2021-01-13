@@ -232,7 +232,7 @@
 
   $(document).ready(function() {
     var busqueda = $('#busqueda'),
-        titulo = $('div h5');
+        titulo = $('div div h5');
     $(titulo).each(function() {
         var li = $(this);
         //si presionamos la tecla

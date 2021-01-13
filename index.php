@@ -232,10 +232,10 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                     <p>Aquestes son les fotos de les vostres experiencies!</p>
                 </div>
 
-                <div class="search">
+                <!-- <div class="search">
                     <input type="text" id="busqueda" placeholder="Buscar ...">
                     <i class="glyphicon glyphicon-search"></i>
-                </div>
+                </div> -->
 
                 <div id="experiencies">
                     
@@ -355,7 +355,6 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                             <li class="active"><i class="bx bx-chevron-right"></i><a href="#">Inicio</a></li>
                             <li><a href="#nosotros"><i class="bx bx-chevron-right"></i>Sobre Nosotros</a></li>
                             <li><a href="#experiencias"><i class="bx bx-chevron-right"></i>Experiencias</a></li>
-                            <li><a href="#equipo"><i class="bx bx-chevron-right"></i>Equipo</a></li>
                             <li><a href="#contacto"><i class="bx bx-chevron-right"></i>Contacto</a></li>
                         </ul>
                     </div>
