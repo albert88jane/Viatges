@@ -48,20 +48,23 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
         <div class="container-fluid d-flex align-items-center justify-content-between">
 
             <h1 class="logo"><a href="index.php">FAST RUMBO</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href = "index.html" class = "logo"><img src = "assets/img/logo.png" alt = "" class = "img-fluid"></a>-->
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class="active"><a href="#">INICIO</a></li>
                     <li><a href="#nosotros">Sobre Nosotros</a></li>
                     <li><a href="#experiencias">Experiencias</a></li>
-                    <li><a href="#equipo">Equipo</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav><!-- .nav-menu -->
 
-            <a type="button" data-toggle="modal" data-target="#exampleModal" class="get-started-btn scrollto">Iniciar Sesion / Registrar</a>
+            <a type="button" data-toggle="modal" data-target="#exampleModal" class="get-started-btn scrollto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+                Iniciar Sesion / Registrar
+            </a>
 
         </div>
     </header><!-- End Header -->
