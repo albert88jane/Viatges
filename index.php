@@ -232,10 +232,12 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                     <h2>Fotos</h2>
                     <p>Aquestes son les fotos de les vostres experiencies!</p>
                 </div>
-                <a role="button" style="background-color: #ff4a17" class="get-started-btn ">
-                Crear experiencies
-                </a>
-               
+
+                <div class="centrardiv">
+                        <a type="button" class="get-started-btn centrar">
+                            Crear experiencies
+                        </a>
+                    </div>
 
                 <div id="experiencies">
                     
