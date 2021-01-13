@@ -1464,3 +1464,17 @@ html , body{
   margin-right: 150px;
 }
 
+.centrar {
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: #ff4a17;
+  color: #fff;
+} 
+
+.centrardiv {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+} 
