@@ -8,6 +8,8 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
     setcookie( 'politica', '1', $caducidad );
 }
 
+echo $_SESSION['userLogged'];
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -82,14 +84,14 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                         <form action="probes/login_usuario.php" method="POST">
                             <label for="nom">
                                 Nombre:
-                                <input type="text" name="nom" id="nom">
+                                <input type="text" name="nom" id="nom_log">
                             </label>
                             <label for="contrasenya">
                                 Contraseña:
-                                <input type="password" name="contrasenya" id="contrasenya">
+                                <input type="password" name="contrasenya" id="contrasenya_log">
                             </label>
                             <br>
-                            <input class="boton" type="submit" value="Enviar el formulario">
+                            <a class="boton" type="button" id="boton_login" value="Enviar el formulario">Iniciar Sesion</a>
 
                         </form>
                     </div>
@@ -97,7 +99,7 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                         <form action="probes/crea_usuari.php" method="POST">
                             <label for="nom">
                                 Nombre:
-                                <input type="text" name="nom" id="nom">
+                                <input type="text" name="nom" id="nom_reg">
                             </label>
                             <label for="email">
                                 Correo Electronico:
@@ -105,7 +107,7 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                             </label>
                             <label for="contrasenya">
                                 Contraseña:
-                                <input type="password" name="contrasenya" id="contrasenya">
+                                <input type="password" name="contrasenya" id="contrasenya_reg">
                             </label>
                             <br>
                             <input class="boton" type="submit" value="Enviar el formulario">
