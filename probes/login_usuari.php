@@ -7,9 +7,9 @@
 	require_once('usuaris.php');
 
 
-	$nom = $_POST['nom_usuari'];
+	$nom = $_GET['nom_usuari'];
 
-	$password = md5($_POST['contrasenya']);
+	$password = md5($_GET['contrasenya']);
 	
 	$usuarios = new Usuari();
 
