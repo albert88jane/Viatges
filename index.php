@@ -246,11 +246,29 @@ echo $_SESSION['userLogged'];
                             Categories
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Montaña</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Playa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Rio</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Esquiar</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Escalada</a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Aventura</a>
-                            <a class="dropdown-item" href="#">Platja</a>
-                            <a class="dropdown-item" href="#">Montanya</a>
-                            <a class="dropdown-item" href="#">Pinga</a>
-                            <a class="dropdown-item" href="#">Hotel</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Familiar</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Romantico</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Gastronomia</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Cultura</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Bienestar</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Riesgo Extremo</a>
 
                         </div>
                     </div>
