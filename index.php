@@ -240,37 +240,39 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                         </a>
                     </div>
 
-                    <div class="dropdown">
+                    <select id="sel_cat" class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Categories
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Montaña</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Playa</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Rio</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Esquiar</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Escalada</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Aventura</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Familiar</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Romantico</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Gastronomia</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Cultura</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Bienestar</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Riesgo Extremo</a>
+                            <option value="0" class="dropdown-item" href="#">Todas</a>
 
-                        </div>
+                            <option value="1"class="dropdown-item" href="#">Montaña</a>
+                            
+                            <option value="2"class="dropdown-item" href="#">Playa</a>
+                            
+                            <option value="3"class="dropdown-item" href="#">Rio</a>
+                            
+                            <option value="4"class="dropdown-item" href="#">Esquiar</a>
+                            
+                            <option value="5"class="dropdown-item" href="#">Escalada</a>
+                            
+                            <option value="6"class="dropdown-item" href="#">Aventura</a>
+                            
+                            <option value="7"class="dropdown-item" href="#">Familiar</a>
+                            
+                            <option value="8"class="dropdown-item" href="#">Romantico</a>
+                            
+                            <option value="9"class="dropdown-item" href="#">Gastronomia</a>
+                            
+                            <option value="10"class="dropdown-item" href="#">Cultura</a>
+                            
+                            <option value="11"class="dropdown-item" href="#">Bienestar</a>
+
+                            <option value="12"class="dropdown-item" href="#">Riesgo Extremo</a>
+
                     </div>
+                    </select>
 
                    
 
