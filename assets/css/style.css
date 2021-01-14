@@ -1477,12 +1477,10 @@ html , body{
   align-items: center;
   justify-content: center;
   display: flex;
+  z-index: 997;
 } 
 
 #popexp{
-  z-index: 99999;
+  
 }
 
-.ocultar{
-  display: none;
-}
