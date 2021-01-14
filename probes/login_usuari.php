@@ -7,7 +7,7 @@
 	require_once('usuaris.php');
 
 
-	$nom = $_GET['nom_usuari'];
+	$nom = $_GET['nom_user'];
 
 	$password = md5($_GET['contrasenya']);
 	
@@ -15,8 +15,7 @@
 
 	$usuarios -> select($nom, $password);
 
-	
-	echo $usuarios;
+
 	
 		
 		

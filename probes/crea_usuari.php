@@ -11,11 +11,11 @@
         require_once('usuaris.php');
 		
 
-        	$nom_usuari = $_POST['nom'];
+        	$nom_usuari = $_GET['nom_usuari'];
             
-			$contrasenya = md5($_POST['contrasenya']);
+			$contrasenya = md5($_GET['contrasenya']);
             
-			$email = $_POST['email'];
+			$email = $_GET['mail'];
         
 		
 

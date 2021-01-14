@@ -1,8 +1,6 @@
-// Experiences
+    //********************************************* */
+    //EXPERIENCIAS
 window.onload = function() {
-
-
-        //axios.get('http://localhost/Viatges/assets/js/codebeautify.json', {
         axios.get('http://fastrumbo.alumnes.iam.cat/probes/experiencia_categoria.php', 
         {   
         params: {         
@@ -14,13 +12,11 @@ window.onload = function() {
               
         var contenedor = "";
         var cont = 0;
-
         for(let i=0; i < numJson.length; i++){
             if(cont ==0){
                 contenedor += "<div class='container'>";
                 contenedor += "<div class='row'>";
             }
-
             contenedor += "<div class='card col-lg-4 col-md-6 d-flex' data-aos='fade-up' data-aos-delay='100'>";
             contenedor += "<div>";
             contenedor += "<img src= '"+ info.data[i].img + "' class='card-img-top' alt='...'>";
@@ -49,17 +45,14 @@ window.onload = function() {
             contenedor += "</div>";
             contenedor += "</div>";
             contenedor += "</div>";
-
             if(cont ==2){
                 contenedor += "</div>";
                 contenedor += "</div>";
             }
-        
              if( cont != 2){
                  cont++;
             }else cont= 0;
         }
-        
         document.getElementById("experiencies").innerHTML = contenedor;
     })
     .catch(function(){
@@ -67,6 +60,58 @@ window.onload = function() {
     })
     .then(function() {
     })
+
+
+
+    //********************************************* */
+    //LOGIN
+    document.getElementById("boton_login").addEventListener('click', function(){
+        var nom_us = document.getElementById("nom_log").value;
+        var password = document.getElementById("contrasenya_log").value;
+        
+
+        axios.get('http://fastrumbo.alumnes.iam.cat/probes/login_usuari.php', 
+            {   
+            params: {         
+                    nom_user: nom_us,
+                    contrasenya: password
+            }
+        })
+        .then(function(datos) {
+            
+      
+        })
+        .catch(function(){
+            console.log("problem!");
+        })
+    });
+
+
+    //********************************************* */
+    //REGISTRAR
+    document.getElementById("boton_registro").addEventListener('click', function(){
+        var nom = document.getElementById("nom_reg").value;
+        var email = document.getElementById("email").value;
+        var passwordd = document.getElementById("contrasenya_reg").value;
+        console.log(nom)
+
+        axios.get('http://fastrumbo.alumnes.iam.cat/probes/crea_usuari.php', 
+            {   
+            params: {         
+                    nom_usuari: nom,
+                    mail: email,
+                    contrasenya: passwordd
+            }
+        })
+        .then(function(datoos) {
+            
+            
+
+        })
+        .catch(function(){
+            console.log("problem!");
+        })
+    });
   };
   
   

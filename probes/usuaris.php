@@ -63,6 +63,9 @@
             $this->$property = $value;
             session_start();
             $_SESSION['userLogged']= $this->rows[0]['id'];
+            $caducidad = time() + ( 60 * 60 * 24 * 365 );
+             // Crea una cookie con la caducidad
+             setcookie('PROBA', $_SESSION['userLogged'], $caducidad );
 			
             return $this->rows;
         }

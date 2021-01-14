@@ -8,7 +8,6 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
     setcookie( 'politica', '1', $caducidad );
 }
 
-echo $_SESSION['userLogged'];
 
 ?>
 <!DOCTYPE html>
@@ -110,7 +109,7 @@ echo $_SESSION['userLogged'];
                                 <input type="password" name="contrasenya" id="contrasenya_reg">
                             </label>
                             <br>
-                            <input class="boton" type="submit" value="Enviar el formulario">
+                            <a class="boton" type="button" id="boton_registro" value="Enviar el formulario">Registrar</a>
 
                         </form>
                     </div>
