@@ -1479,45 +1479,6 @@ html , body{
   display: flex;
 } 
 
-/* Lista de Categorias 
- --------------------------------------------*/
- .list-category {
-  list-style-type: none;
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.list-category li {
- display: inline-block;
-}
-
-.list-category label {
- display: inline-block;
- color: #E5E5E5;
- cursor: pointer;
- background: #ff4a17;
- -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,0.25);
- box-shadow: inset 0 -2px 0 rgba(0,0,0,0.25);
- -webkit-border-radius: 3px;
- -moz-border-radius: 3px;
- border-radius: 3px;
- padding: 12px 16px;
- -webkit-transition: all 0.2s ease;
- -o-transition: all 0.2s ease;
- transition: all 0.2s ease;
-}
-
-/* Estilos cuando un radio esta seleccionado
---------------------------------------------------*/
-#all:checked ~ .list-category label[for="all"],
-#webdesign:checked ~ .list-category label[for="webdesign"], 
-#webdevelopment:checked ~ .list-category label[for="webdevelopment"], 
-#graphicdesign:checked ~ .list-category label[for="graphicdesign"], 
-#javascript:checked ~ .list-category label[for="javascript"] {
- background: #ff8664;
- color: #FFF;
-}
 #popexp{
   z-index: 99999;
 }
