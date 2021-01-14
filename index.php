@@ -233,12 +233,33 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                     <p>Aquestes son les fotos de les vostres experiencies!</p>
                 </div>
 
-                <div class="centrardiv">
+                    <div class="centrardiv">
                         <a type="button" data-toggle="modal" data-target="#popexp" class="get-started-btn centrar">
                             Crear experiencies
                         </a>
                     </div>
-                    
+
+                    <div class="container">
+                        <!-- Inputs de las Categorias -->
+                        <div class="ocultar">
+                            <input name="category-css" id="all" type="radio" checked>
+                            <input name="category-css" id="webdesign" type="radio">
+                            <input name="category-css" id="webdevelopment" type="radio">
+                            <input name="category-css" id="graphicdesign" type="radio">
+                            <input name="category-css" id="javascript" type="radio">
+                        </div>
+                        
+                        <!-- Categorias -->
+                        <ul class="list-category">
+                            <li><label for="all">Todos</label></li>
+                            <li><label for="webdesign">Diseño web</label></li>
+                            <li><label for="webdevelopment">Desarrollo web</label></li>
+                            <li><label for="graphicdesign">Diseño grafico</label></li>
+                            <li><label for="javascript">Javascript</label></li>
+                        </ul>
+                    </div>
+
+
                     <div class="modal fade" id="popexp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">

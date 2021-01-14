@@ -7,7 +7,7 @@
 
 	require_once('experiencies.php');
 	
-	$cat = $_POST['categoria'];
+	$cat = $_GET['categoria'];
 
 
 	$exp = new experiencia();
