@@ -241,13 +241,13 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
 
                     <div class="container">
                         <!-- Inputs de las Categorias -->
-                        <div class="ocultar">
-                            <input name="category-css" id="all" type="radio" checked>
-                            <input name="category-css" id="webdesign" type="radio">
-                            <input name="category-css" id="webdevelopment" type="radio">
-                            <input name="category-css" id="graphicdesign" type="radio">
-                            <input name="category-css" id="javascript" type="radio">
-                        </div>
+                        
+                        <input class="ocultar" name="category-css" id="all" type="radio" checked>
+                        <input class="ocultar" name="category-css" id="webdesign" type="radio">
+                        <input class="ocultar" name="category-css" id="webdevelopment" type="radio">
+                        <input class="ocultar" name="category-css" id="graphicdesign" type="radio">
+                        <input class="ocultar" name="category-css" id="javascript" type="radio">
+                        
                         
                         <!-- Categorias -->
                         <ul class="list-category">

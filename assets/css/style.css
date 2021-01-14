@@ -1521,3 +1521,7 @@ html , body{
 #popexp{
   z-index: 99999;
 }
+
+.ocultar{
+  display: none;
+}
