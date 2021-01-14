@@ -8,6 +8,8 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
     setcookie( 'politica', '1', $caducidad );
 }
 
+echo $_SESSION['userLogged'];
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -478,7 +480,6 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/axios.js"></script>
-    <script src="assets/js/axios_login.js"></script>
 
 </body>
 
