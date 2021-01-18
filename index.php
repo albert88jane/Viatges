@@ -247,7 +247,7 @@ if ( isset( $_REQUEST['politica-cookies'] ) ) {
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <option value="0" class="dropdown-item" href="#">Todas</a>
 
-                            <option value="1"class="dropdown-item" href="#">Montaña</a>
+                            <option value="1"class="dropdown-item" href="#">Montanya</a>
                             
                             <option value="2"class="dropdown-item" href="#">Playa</a>
                             
